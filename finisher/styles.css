@@ -1,0 +1,116 @@
+:root {
+  --primary-font-family: "DM Sans", -apple-system, BlinkMacSystemFont, "Segoe UI",
+    Roboto, Helvetica, sans-serif;
+
+  --black: #1e1e1e;
+  --white: #fff;
+  --red: #e00034;
+  --blue: #1b00e5;
+  --purple: #cc0088;
+
+  --background-color: var(--white);
+  --accent-color: var(--black);
+
+  --pc-max-width: 300px;
+  --pc-border-size: 1px;
+  --pc-border-color: var(--accent-color);
+  --pc-background-shadow: drop-shadow(4px 4px 0px var(--accent-color));
+  --pc-background-color: var(--background-color);
+  --pc-font-family: var(--primary-font-family);
+  --pc-font-color: var(--accent-color);
+
+  --pc-header-margin: 24px 8px;
+
+  --pc-button-font-family: var(--primary-font-family);
+  --pc-button-padding: 8px;
+  --pc-button-border-size: 1px;
+  --pc-button-border-color: var(--accent-color);
+  --pc-button-color: var(--accent-color);
+  --pc-button-background-color: var(--background-color);
+  --pc-button-shadow: drop-shadow(2px 2px 0px var(--accent-color));
+
+  --pc-button-transform-active: translate(2px, 2px);
+  --pc-button-shadow-active: drop-shadow(0px 0px 0px var(--accent-color));
+
+  --pc-info-wrapper-margin: 0 8px;
+
+  font-family: var(--primary-font-family);
+}
+
+[data-theme="red"] {
+  --accent-color: var(--red);
+
+
+  --pc-border-color: var(--accent-color);
+  --pc-background-shadow: drop-shadow(4px 4px 0px var(--accent-color));
+  --pc-font-color: var(--accent-color);
+  --pc-button-border-color: var(--accent-color);
+  --pc-button-color: var(--accent-color);
+  --pc-button-shadow: drop-shadow(2px 2px 0px var(--accent-color));
+  --pc-button-shadow-active: drop-shadow(0px 0px 0px var(--accent-color));
+}
+
+[data-theme="blue"] {
+  --accent-color: var(--blue);
+
+  --pc-button-background-color: var(--background-color);
+  --pc-border-color: var(--accent-color);
+  --pc-background-shadow: drop-shadow(4px 4px 0px var(--accent-color));
+  --pc-font-color: var(--accent-color);
+  --pc-button-border-color: var(--accent-color);
+  --pc-button-color: var(--accent-color);
+  --pc-button-shadow: drop-shadow(2px 2px 0px var(--accent-color));
+  --pc-button-shadow-active: drop-shadow(0px 0px 0px var(--accent-color));
+}
+
+[data-theme="purple"] {
+  --accent-color: var(--purple);
+
+  --pc-border-color: var(--accent-color);
+  --pc-background-shadow: drop-shadow(4px 4px 0px var(--accent-color));
+  --pc-font-color: var(--accent-color);
+  --pc-button-border-color: var(--accent-color);
+  --pc-button-color: var(--accent-color);
+  --pc-button-shadow: drop-shadow(2px 2px 0px var(--accent-color));
+  --pc-button-shadow-active: drop-shadow(0px 0px 0px var(--accent-color));
+}
+
+[data-theme="dark"] {
+  --accent-color: var(--white);
+  --background-color: var(--black);
+
+  --pc-background-color: var(--background-color);
+  --pc-button-background-color: var(--background-color);
+  --pc-border-color: var(--accent-color);
+  --pc-background-shadow: drop-shadow(4px 4px 0px color-mix(in srgb, var(--black) 25%, white));
+
+  --pc-font-color: var(--accent-color);
+  --pc-button-border-color: var(--accent-color);
+  --pc-button-color: var(--accent-color);
+  --pc-button-shadow: drop-shadow(2px 2px 0px var(--accent-color));
+  --pc-button-shadow-active: drop-shadow(0px 0px 0px var(--accent-color));
+}
+
+body {
+
+
+  margin-top: 100px;
+  width: min(100%, 900px);
+  margin-inline: auto;
+}
+
+product-card {
+  margin-inline: auto;
+}
+
+.product-card-wrapper {
+  margin-inline: auto;
+  width: 300px;
+}
+
+
+.theme-toggler-wrapper {
+  margin-inline: auto;
+  margin-top: 24px;
+  width: fit-content;
+}

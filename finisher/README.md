@@ -1,35 +1,32 @@
 # \<theme-toggler>
 
-This webcomponent follows the [open-wc](https://github.com/open-wc/open-wc) recommendation.
+## Details
 
-## Installation
-
-```bash
-npm i theme-toggler
-```
-
-## Usage
-
-```html
-<script type="module">
-  import 'theme-toggler/theme-toggler.js';
-</script>
-
-<theme-toggler></theme-toggler>
-```
-
-
-
-## Tooling configs
-
-For most of the tools, the configuration is in the `package.json` to minimize the amount of files in your project.
-
-If you customize the configuration a lot, you can consider moving them to individual files.
-
-## Local Demo with `web-dev-server`
+To start the dev server, install the depenedencies and run the start script.
 
 ```bash
+npm i
 npm start
 ```
 
-To run a local development server that serves the basic demo located in `demo/index.html`
+You can then navigate to localhost:8000 and observe the changes that you make to the component.
+
+The stylesheet has already been created, along with all of the styles of the different themes.
+
+## Task 1
+
+In the file `theme-toggler.js`, begin by creating a component element with a button inside of it.
+
+You can give the button whatever appearance and text you like.
+
+## Task 2
+
+Wire up an event listener to the button. Check that it is working by logging a message to the console when the button is clicked.
+
+## Task 3
+
+Create a property on the component that stores the current theme, when the button is clicked, cycle through all the possible values: 'red', 'blue', 'purple', 'white', 'black'.
+
+## Task 4
+
+Once the theme has been updated, apply the theme to the body of the document by setting the `data-theme` attribute.
