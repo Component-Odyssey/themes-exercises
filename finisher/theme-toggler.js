@@ -28,14 +28,12 @@ class ThemeToggler extends LitElement {
   `;
 
   toggleTheme() {
-    if (!this.currentTheme) {
-      this.currentTheme = 'red';
-    } else {
-      const currIndex = this.themes.indexOf(this.currentTheme);
-      this.currentTheme = this.themes[currIndex + 1] || this.themes[0];
-    }
+    const currentThemeIndex = this.themes.indexOf(this.currentTheme);
+    const nextThemeIndex = (currentThemeIndex + 1) % this.themes.length;
+    const nextTheme = this.themes[nextThemeIndex];
 
-    document.body.setAttribute('data-theme', this.currentTheme);
+    document.body.setAttribute('data-theme', nextTheme);
+    this.currentTheme = nextTheme;
   }
 
   render() {

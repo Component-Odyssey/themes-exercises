@@ -1,5 +1,4 @@
 import { LitElement, html, css } from "lit";
-import { when } from "lit/directives/when.js";
 
 class LitProduct extends LitElement {
   static styles = css`

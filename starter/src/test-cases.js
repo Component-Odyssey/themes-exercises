@@ -10,8 +10,6 @@ test1El.test(() => {
 
   const toggleComponent = document.querySelector('theme-toggler');
 
-  console.log(toggleComponent)
-
   const button = toggleComponent.shadowRoot.querySelector('button');
   button.click();
 
