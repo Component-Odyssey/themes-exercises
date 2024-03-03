@@ -1,31 +1,11 @@
-import { LitElement, html, css } from "lit";
+import { LitElement, html } from "lit";
+import { styles } from "./src/toggler-styles.js";
 
 class ThemeToggler extends LitElement {
   themes = ['red', 'blue', 'purple', 'dark', 'light'];
   currentTheme = '';
 
-  static styles = css`
-    :host {
-      box-sizing: border-box;
-    }
-
-    button {
-      font-family: inherit;
-      font-size: inherit;
-      background: white;
-      border-radius: 2px;
-      cursor: pointer;
-      padding: 8px;
-      border: 1px solid black;
-      filter: drop-shadow(2px 2px 0px var(--black));
-      width: fit-content;
-    }
-
-    button:active {
-      transform: translate(2px, 2px);
-      filter: drop-shadow(0px 0px 0px var(--black));
-    }
-  `;
+  static styles = styles;
 
   toggleTheme() {
     const currentThemeIndex = this.themes.indexOf(this.currentTheme);

@@ -5,8 +5,11 @@ import { styles } from "./src/toggler-styles.js";
 // When you've hit the last theme, you'll want to loop back to the first one.
 // Assume that no theme is currently present on the body element. Clicking the theme toggler for the first time should set the theme to 'red'
 // To get the tests passing, ensure that your theme cycles through the correct order defined in the README.
+// You want to set the correct valeu on the `data-theme` attribute on the body
 
 class ThemeToggler extends LitElement {
+  themes = ['red', 'blue', 'purple', 'dark', 'light'];
+
   static styles = styles;
 
   render() {

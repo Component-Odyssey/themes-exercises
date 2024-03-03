@@ -11,6 +11,9 @@ test1El.test(() => {
   const toggleComponent = document.querySelector('theme-toggler');
 
   const button = toggleComponent.shadowRoot.querySelector('button');
+
+  if (!button) return false;
+
   button.click();
 
   if (body.getAttribute('data-theme') !== 'red') return false;
