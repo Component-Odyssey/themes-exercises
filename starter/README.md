@@ -21,7 +21,7 @@ In the file `theme-toggler.js`, begin by creating a component element with a but
 
 You can give the button whatever appearance and text you like.
 
-## Task 2
+## Task 2
 
 Wire up an event listener to the button. Check that it is working by logging a message to the console when the button is clicked.
 
